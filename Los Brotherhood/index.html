@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Los Brotherhood</title>
+  <meta name="description" content="Los Brotherhood, coffee shop di Bungah, Gresik dengan kopi, teh, dan minuman segar. Lihat menu dan pesan lewat WhatsApp.">
+  <meta name="theme-color" content="#17100B">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Huruf: Bricolage Grotesque (judul) dan Plus Jakarta Sans (teks). Butuh internet. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGASI ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#beranda" aria-label="Los Brotherhood, kembali ke beranda">Los Brotherhood</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu navigasi">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Navigasi utama">
+        <ul class="nav-list">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" data-wa href="#kontak">Pesan via WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== BERANDA ===================== -->
+    <section id="beranda" class="band band-dark hero" aria-labelledby="judul-beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="judul-beranda">Ngopi bareng, tanpa <span class="nowrap">buru-buru.</span></h1>
+          <p class="hero-lead">Kopi susu, espresso, dan minuman segar yang dibuat satu per satu. Duduk santai di sini, atau pesan lewat WhatsApp untuk dibawa pulang.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Lihat menu</a>
+            <a class="btn btn-outline" data-wa href="#kontak">Pesan via WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <img src="images/hero.svg" alt="" width="800" height="800">
+          <svg class="stamp" viewBox="0 0 800 800" focusable="false">
+            <defs>
+              <path id="stamp-ring" d="M40 400 a360 360 0 1 1 720 0 a360 360 0 1 1 -720 0"/>
+            </defs>
+            <text>
+              <textPath href="#stamp-ring" textLength="2250" lengthAdjust="spacing">LOS BROTHERHOOD&#160;&#160;&#160;&#160;GOOD COFFEE GOOD MOOD&#160;&#160;&#160;&#160;LOS BROTHERHOOD&#160;&#160;&#160;&#160;GOOD COFFEE GOOD MOOD&#160;&#160;&#160;&#160;LOS BROTHERHOOD&#160;&#160;&#160;&#160;GOOD COFFEE GOOD MOOD&#160;&#160;&#160;&#160;</textPath>
+            </text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TENTANG ===================== -->
+    <section id="tentang" class="band band-light about" aria-labelledby="judul-tentang">
+      <div class="container about-grid">
+        <figure class="about-figure">
+          <!-- UBAH FOTO: ganti file di images/vibes/ (suasana-1.jpg sampai suasana-5.jpg), atau ubah alamat foto di bawah -->
+          <div class="slider" role="group" aria-roledescription="carousel" aria-label="Foto suasana Los Brotherhood">
+            <ul class="slides">
+            <li class="slide"><img src="images/vibes/suasana-1.jpg" alt="Halaman taman Los Brotherhood di siang hari, pohon besar dengan bangku kayu dan pelanggan yang mengobrol" width="1200" height="1600"></li>
+            <li class="slide"><img src="images/vibes/suasana-2.jpg" alt="Halaman taman di malam hari dengan lampu gantung, pelanggan bekerja dengan laptop dan mengobrol" width="1200" height="1600" loading="lazy"></li>
+            <li class="slide"><img src="images/vibes/suasana-3.jpg" alt="Pelanggan bersantai di meja kayu dengan kopi di halaman, dinding bata di belakang" width="1200" height="900" loading="lazy"></li>
+            <li class="slide"><img src="images/vibes/suasana-4.jpg" alt="Ruang dalam beratap kayu terbuka dengan lampu gantung, penuh pelanggan di malam hari" width="1200" height="900" loading="lazy"></li>
+            <li class="slide"><img src="images/vibes/suasana-5.jpg" alt="Halaman taman di malam hari dengan lampu bohlam menggantung di bawah pohon" width="1200" height="900" loading="lazy"></li>
+            </ul>
+            <button class="slider-btn slider-prev" type="button" aria-label="Foto sebelumnya">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="slider-btn slider-next" type="button" aria-label="Foto berikutnya">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="slider-dots" aria-label="Pilih foto"></div>
+          </div>
+        </figure>
+
+        <div class="about-copy">
+          <h2 id="judul-tentang">Tempat ngopi untuk teman lama dan teman baru</h2>
+          <!-- UBAH: ganti dua paragraf ini dengan cerita cafe Anda -->
+          <p>Los Brotherhood lahir dari kebiasaan sederhana: ngopi bareng teman sampai lupa waktu. Kami ingin menyediakan tempat yang tenang, kopi yang enak, dan harga yang masuk akal untuk dinikmati setiap hari.</p>
+          <p>Menu kami dimulai dari kopi susu dan espresso, ditambah teh, squash, dan minuman manis untuk teman yang tidak minum kopi.</p>
+
+          <ul class="about-points">
+            <li>
+              <strong>Dibuat satu per satu</strong>
+              <span>Setiap gelas diracik saat dipesan, jadi rasanya masih segar ketika sampai di meja Anda.</span>
+            </li>
+            <li>
+              <strong>Banyak pilihan rasa</strong>
+              <span>Dari kopi hitam sampai squash dan minuman manis, ada yang cocok untuk semua teman.</span>
+            </li>
+            <li>
+              <strong>Tempat duduk santai</strong>
+              <span>Cukup nyaman untuk ngobrol panjang, kerja ringan, atau menunggu hujan reda.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <!--
+      CARA MENAMBAH MENU: salin satu blok <li class="menu-card"> ... </li> di bawah,
+      tempel di dalam <ul class="menu-grid">, lalu ubah nama, harga, deskripsi, foto, dan data-category.
+      Pilihan data-category: kopi, squash, tea, sweet-drinks.
+    -->
+    <section id="menu" class="band band-dark menu" aria-labelledby="judul-menu">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="judul-menu">Menu</h2>
+          <p>Ketuk Tambah pada menu yang Anda mau, lalu kirim semua pesanan sekaligus lewat WhatsApp dari keranjang.</p>
+        </div>
+
+        <div class="menu-filter" role="group" aria-label="Pilih kategori menu">
+          <button class="chip is-active" type="button" data-filter="semua" aria-pressed="true">Semua</button>
+          <button class="chip" type="button" data-filter="kopi" aria-pressed="false">Kopi</button>
+          <button class="chip" type="button" data-filter="squash" aria-pressed="false">Squash</button>
+          <button class="chip" type="button" data-filter="tea" aria-pressed="false">Tea</button>
+          <button class="chip" type="button" data-filter="sweet-drinks" aria-pressed="false">Sweet Drinks</button>
+        </div>
+        <p class="sr-only" id="filter-status" aria-live="polite"></p>
+
+        <ul class="menu-grid" id="menu-grid">
+
+          <!-- ---------- KOPI ---------- -->
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/kopi-hitam.svg" alt="Kopi hitam tubruk dalam cangkir putih" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Kopi Hitam</h3>
+                <p class="menu-price">Rp 5.000</p>
+              </div>
+              <p class="menu-desc">Kopi hitam tubruk. Ada pilihan gilingan halus maupun kasar.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/kopi-susu.svg" alt="Segelas kopi susu dingin dengan sedotan" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Kopi Susu</h3>
+                <p class="menu-price">Rp 6.000</p>
+              </div>
+              <p class="menu-desc">Kopi hitam tubruk ditambah sedikit susu dan gula.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/vietnam-drip-susu.svg" alt="Vietnam drip susu dua lapis dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Vietnam Drip Susu</h3>
+                <p class="menu-price">Rp 7.000</p>
+              </div>
+              <p class="menu-desc">Kopi diseduh tetes demi tetes ala Vietnam, bertemu susu kental manis.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/espresso.svg" alt="Secangkir espresso di atas tatakan putih" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Espresso</h3>
+                <p class="menu-price">Rp 9.000</p>
+              </div>
+              <p class="menu-desc">Satu shot pekat, apa adanya. Untuk yang suka kopi kuat.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/americano.svg" alt="Americano hitam dalam cangkir putih" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Americano</h3>
+                <p class="menu-price">Rp 10.000</p>
+              </div>
+              <p class="menu-desc">Espresso dengan air. Ringan, segar, mudah diminum.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/kopi-sanger.svg" alt="Kopi sanger berwarna cokelat susu dalam cangkir" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Kopi Sanger</h3>
+                <p class="menu-price">Rp 9.000</p>
+              </div>
+              <p class="menu-desc">Kopi dengan susu kental manis, minuman khas Aceh yang lembut dan manis.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/kopi-susu-caramel.svg" alt="Kopi susu caramel dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Kopi Susu Caramel</h3>
+                <p class="menu-price">Rp 11.000</p>
+              </div>
+              <p class="menu-desc">Kopi susu dengan sirup karamel yang manis dan wangi.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/kopi-susu-banana.svg" alt="Kopi susu banana dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Kopi Susu Banana</h3>
+                <p class="menu-price">Rp 11.000</p>
+              </div>
+              <p class="menu-desc">Kopi susu dengan rasa pisang yang manis dan unik.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/kopi-susu-coklat.svg" alt="Kopi susu coklat dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Kopi Susu Coklat</h3>
+                <p class="menu-price">Rp 11.000</p>
+              </div>
+              <p class="menu-desc">Perpaduan kopi susu dan cokelat yang pekat.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/kopi-susu-butterscotch.svg" alt="Kopi susu butterscotch dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Kopi Susu Butterscotch</h3>
+                <p class="menu-price">Rp 11.000</p>
+              </div>
+              <p class="menu-desc">Kopi susu dengan rasa butterscotch yang manis dan gurih.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/kopi-susu-gula-aren.svg" alt="Kopi susu gula aren tiga lapis dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Kopi Susu Gula Aren</h3>
+                <p class="menu-price">Rp 11.000</p>
+              </div>
+              <p class="menu-desc">Kopi susu dengan gula aren yang manisnya lembut.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/cappuccino.svg" alt="Cappuccino dengan busa susu berbentuk hati" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Capucino</h3>
+                <p class="menu-price">Rp 11.000</p>
+              </div>
+              <p class="menu-desc">Espresso, susu, dan busa susu yang tebal.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/manual-brew-v60.svg" alt="Kopi seduh manual dalam cangkir putih" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Manual Brew V60</h3>
+                <p class="menu-price">Rp 15.000</p>
+              </div>
+              <p class="menu-desc">Diseduh manual dengan V60, rasa kopi lebih bersih dan ringan.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="kopi">
+            <div class="menu-photo">
+              <img src="images/menu/dirty-latte.svg" alt="Dirty latte dua lapis dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Dirty Latte</h3>
+                <p class="menu-price">Rp 12.000</p>
+              </div>
+              <p class="menu-desc">Espresso dituang di atas susu dingin. Dua lapis, aduk sebelum diminum.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+
+          <!-- ---------- SQUASH ---------- -->
+          <li class="menu-card" data-category="squash">
+            <div class="menu-photo">
+              <img src="images/menu/lemon-squash.svg" alt="Lemon squash dingin dengan irisan lemon" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Lemon Squash</h3>
+                <p class="menu-price">Rp 8.000</p>
+              </div>
+              <p class="menu-desc">Minuman lemon yang segar dan dingin. Tambah Yakult +Rp 3.000.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="squash">
+            <div class="menu-photo">
+              <img src="images/menu/leci-squash.svg" alt="Leci squash dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Leci Squash</h3>
+                <p class="menu-price">Rp 8.000</p>
+              </div>
+              <p class="menu-desc">Minuman rasa leci yang manis dan dingin. Tambah Yakult +Rp 3.000.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="squash">
+            <div class="menu-photo">
+              <img src="images/menu/melon-squash.svg" alt="Melon squash hijau dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Melon Squash</h3>
+                <p class="menu-price">Rp 8.000</p>
+              </div>
+              <p class="menu-desc">Minuman rasa melon yang segar dan manis. Tambah Yakult +Rp 3.000.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="squash">
+            <div class="menu-photo">
+              <img src="images/menu/strawberry-squash.svg" alt="Strawberry squash merah dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Strawberry Squash</h3>
+                <p class="menu-price">Rp 8.000</p>
+              </div>
+              <p class="menu-desc">Minuman rasa stroberi yang manis dan segar. Tambah Yakult +Rp 3.000.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+
+          <!-- ---------- TEA ---------- -->
+          <li class="menu-card" data-category="tea">
+            <div class="menu-photo">
+              <img src="images/menu/es-teh.svg" alt="Es teh dalam gelas dengan es batu" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Es Teh</h3>
+                <p class="menu-price">Rp 5.000</p>
+              </div>
+              <p class="menu-desc">Teh dingin manis yang sederhana dan menyegarkan.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="tea">
+            <div class="menu-photo">
+              <img src="images/menu/leci-tea.svg" alt="Leci tea dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Leci Tea</h3>
+                <p class="menu-price">Rp 7.000</p>
+              </div>
+              <p class="menu-desc">Teh dingin dengan rasa leci yang harum.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="tea">
+            <div class="menu-photo">
+              <img src="images/menu/lemon-tea.svg" alt="Lemon tea dingin dengan irisan lemon" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Lemon Tea</h3>
+                <p class="menu-price">Rp 7.000</p>
+              </div>
+              <p class="menu-desc">Teh dingin dengan lemon, segar dan sedikit asam.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="tea">
+            <div class="menu-photo">
+              <img src="images/menu/milk-tea.svg" alt="Milk tea dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Milk Tea</h3>
+                <p class="menu-price">Rp 8.000</p>
+              </div>
+              <p class="menu-desc">Teh dengan susu, lembut dan manis.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="tea">
+            <div class="menu-photo">
+              <img src="images/menu/thai-tea.svg" alt="Thai tea oranye dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Thai Tea</h3>
+                <p class="menu-price">Rp 8.000</p>
+              </div>
+              <p class="menu-desc">Teh ala Thailand yang pekat, manis, dan creamy.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+
+          <!-- ---------- SWEET DRINKS ---------- -->
+          <li class="menu-card" data-category="sweet-drinks">
+            <div class="menu-photo">
+              <img src="images/menu/coklat.svg" alt="Coklat dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Coklat</h3>
+                <p class="menu-price">Rp 11.000</p>
+              </div>
+              <p class="menu-desc">Cokelat pekat yang manis dan lembut.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="sweet-drinks">
+            <div class="menu-photo">
+              <img src="images/menu/red-velvet.svg" alt="Red velvet merah dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Red Velvet</h3>
+                <p class="menu-price">Rp 11.000</p>
+              </div>
+              <p class="menu-desc">Rasa red velvet yang manis dan creamy.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="sweet-drinks">
+            <div class="menu-photo">
+              <img src="images/menu/taro.svg" alt="Taro ungu dingin dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Taro</h3>
+                <p class="menu-price">Rp 11.000</p>
+              </div>
+              <p class="menu-desc">Minuman taro yang manis dengan warna ungu lembut.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+          <li class="menu-card" data-category="sweet-drinks">
+            <div class="menu-photo">
+              <img src="images/menu/matcha.svg" alt="Matcha dua lapis hijau dan putih dalam gelas" width="600" height="600" loading="lazy">
+            </div>
+            <div class="menu-body">
+              <div class="menu-head">
+                <h3 class="menu-name">Matcha</h3>
+                <p class="menu-price">Rp 11.000</p>
+              </div>
+              <p class="menu-desc">Matcha dan susu, manis dengan sedikit pahit.</p>
+              <button class="btn btn-order" type="button" data-add>Tambah</button>
+            </div>
+          </li>
+
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== KONTAK ===================== -->
+    <section id="kontak" class="band band-light contact" aria-labelledby="judul-kontak">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <h2 id="judul-kontak">Mampir, atau pesan dari rumah</h2>
+          <p>Mau minum di tempat atau dibawa pulang? Kirim pesanan lewat WhatsApp, kami siapkan sebelum Anda sampai.</p>
+          <a class="btn btn-primary btn-lg" data-wa href="#kontak">Pesan via WhatsApp</a>
+        </div>
+
+        <!-- UBAH: alamat, jam buka. Nomor WhatsApp dan TikTok diatur di js/config.js -->
+        <dl class="contact-list">
+          <div class="contact-row">
+            <dt>Alamat</dt>
+            <dd>
+              <span id="alamat">Los Brotherhood, Jl. Raya Bungah Dukun, Bungah, Kec. Bungah, Kabupaten Gresik, Jawa Timur 61152</span>
+              <a class="text-link" data-maps href="#kontak">Buka di Google Maps</a>
+            </dd>
+          </div>
+          <div class="contact-row">
+            <dt>Jam buka</dt>
+            <dd>Setiap hari, 07.00 sampai 24.00</dd>
+          </div>
+          <div class="contact-row">
+            <dt>WhatsApp</dt>
+            <dd data-wa-text>+62 858-5046-2945</dd>
+          </div>
+          <div class="contact-row" data-tiktok-row hidden>
+            <dt>TikTok</dt>
+            <dd><a class="text-link" data-tiktok-link href="#kontak"></a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Los Brotherhood</p>
+      <p class="footer-copy">&copy; <span data-year>2026</span> Los Brotherhood. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Tombol WhatsApp mengambang -->
+  <a class="wa-float" data-wa href="#kontak" aria-label="Pesan via WhatsApp">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+      <path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M8 9.5h8M8 12.5h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <span>Pesan</span>
+  </a>
+
+  <!-- Tombol keranjang mengambang: muncul setelah ada menu yang ditambahkan -->
+  <button class="cart-float" type="button" data-cart-open hidden aria-label="Buka keranjang">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+      <path d="M5 8h14l-1.2 11a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M9 8V7a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <span>Keranjang</span>
+    <span class="cart-count" data-cart-count>0</span>
+  </button>
+  <p class="sr-only" id="cart-status" aria-live="polite"></p>
+
+  <!-- Keranjang pesanan -->
+  <dialog class="cart band-light" id="cart" aria-labelledby="judul-keranjang">
+    <div class="cart-panel">
+      <div class="cart-head">
+        <h2 id="judul-keranjang">Keranjang</h2>
+        <button class="cart-close" type="button" data-cart-close aria-label="Tutup keranjang">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <p class="cart-empty" data-cart-empty>Keranjang masih kosong. Tambahkan menu dulu dari daftar menu.</p>
+      <ul class="cart-items" data-cart-items></ul>
+
+      <div class="cart-foot" data-cart-foot>
+        <p class="cart-total"><span>Total</span> <strong data-cart-total>Rp 0</strong></p>
+        <label class="field-label" for="cart-name">Nama pemesan</label>
+        <input class="field" id="cart-name" type="text" autocomplete="name" placeholder="Nama Anda">
+        <label class="field-label" for="cart-note">Catatan (opsional)</label>
+        <textarea class="field" id="cart-note" rows="2" placeholder="Contoh: kurang manis, tambah Yakult, diambil jam 8 malam"></textarea>
+        <a class="btn btn-primary btn-lg" data-cart-send href="#kontak">Kirim pesanan via WhatsApp</a>
+        <button class="text-link cart-clear" type="button" data-cart-clear>Kosongkan keranjang</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
